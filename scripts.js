@@ -20,7 +20,7 @@ function drawMap(){
 
 
 var options = {
-    strings: ['Welcome to the  <i>Satoshi Treasure Map</i>', 'This will show all the Treasure Hunt Key Locations', 'begin loading world...'],
+    strings: ["Welcome to <i>Satoshi's Treasure Map</i>", "This will show all the <i>Treasure Hunt's Keys</i> locations", "begin loading world..."],
     typeSpeed: 20,
     backSpeed: 10,
     cursorChar: '_',
@@ -28,12 +28,14 @@ var options = {
     backDelay: 3000,
     startDelay: 1000,
     onComplete: function() {
-        drawMap();
+        setTimeout(function(){
+            drawMap();
+        }, 500);
         setTimeout(function(self){
             $('.blink').show(500);
             setInterval(blink_text, 1000);
             typed.destroy();
-        }, 4300);
+        }, 4800);
 
     },
     onDestroy: function(){
