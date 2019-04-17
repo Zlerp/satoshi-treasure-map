@@ -1,1 +1,1 @@
-cp -r satoshi-treasure-map/* /var/www/html/
+cp -r /root/satoshi-treasure-map/* /var/www/html/
