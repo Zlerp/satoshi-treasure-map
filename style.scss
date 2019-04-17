@@ -85,6 +85,17 @@ pre {
   font-size: 0.7rem;
 }
 
+#map {
+  color: black;
+  font-family: monospace;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  height:100%;
+}
+
 
 @media (max-width: 768px) {
 

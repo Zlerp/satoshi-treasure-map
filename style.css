@@ -65,6 +65,15 @@ pre {
   color: rgba(0, 255, 102, 0.6) !important;
   font-size: 0.7rem; }
 
+#map {
+  color: black;
+  font-family: monospace; }
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  height: 100%; }
+
 @media (max-width: 768px) {
   .title-text {
     font-size: 40%; }
