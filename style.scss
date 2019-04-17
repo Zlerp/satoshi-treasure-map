@@ -100,15 +100,21 @@ pre {
   height:100%;
   .side-bar {
     position: relative;
-    .about-the-game {
-      position: absolute;
-      bottom: 0.5rem;
-      left: 0.5rem;
-      color: $terminalGreen;
-    }
   }
 }
 
+.about-the-game {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  color: $terminalGreen!important;
+}
+.home-link {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  color: $terminalGreen!important;
+}
 
 @media (max-width: 768px) {
 

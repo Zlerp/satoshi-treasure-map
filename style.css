@@ -79,11 +79,18 @@ pre {
   height: 100%; }
   .grid-layout .side-bar {
     position: relative; }
-    .grid-layout .side-bar .about-the-game {
-      position: absolute;
-      bottom: 0.5rem;
-      left: 0.5rem;
-      color: #00ff66; }
+
+.about-the-game {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  color: #00ff66 !important; }
+
+.home-link {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  color: #00ff66 !important; }
 
 @media (max-width: 768px) {
   .title-text {
