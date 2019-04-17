@@ -140,9 +140,9 @@
             var icon = './key.png';
             var map = new google.maps.Map(document.getElementById('map'), {
                 center: new google.maps.LatLng(0, 0),
-                zoom: Math.ceil(Math.log2($(window).width())) - 8,
+                zoom: Math.ceil(Math.log2($("#map").width())) - 8,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
-                minZoom: Math.ceil(Math.log2($(window).width())) - 8,
+                minZoom: Math.ceil(Math.log2($("#map").width())) - 8,
                 styles: [
                     {
                         "featureType": "administrative.country",
