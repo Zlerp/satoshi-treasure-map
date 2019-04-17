@@ -27,6 +27,8 @@
                     <p>location: <span data-key-location></span></p>
                     <p>description: <span data-key-desc></span></p>
                 </div>
+                <a target="_blank" href="https://satoshistreasure.xyz/" class="about-the-game">About the hunt</a>
+
             </div>
             <div class="h-100 w-100" id="map"></div>
         </div>
@@ -138,9 +140,9 @@
             var icon = './key.png';
             var map = new google.maps.Map(document.getElementById('map'), {
                 center: new google.maps.LatLng(0, 0),
-                zoom: Math.ceil(Math.log2($(window).width())) - 8.8,
+                zoom: Math.ceil(Math.log2($(window).width())) - 8,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
-                minZoom: Math.ceil(Math.log2($(window).width())) - 8.8,
+                minZoom: Math.ceil(Math.log2($(window).width())) - 8,
                 styles: [
                     {
                         "featureType": "administrative.country",

@@ -33,6 +33,8 @@ pre {
 
 .bg {
   background-size: 40px 40px;
+  background-image: -webkit-linear-gradient(left, rgba(0, 255, 102, 0.1) 1px, transparent 1px), -webkit-linear-gradient(top, rgba(0, 255, 102, 0.1) 1px, transparent 1px);
+  background-image: -o-linear-gradient(left, rgba(0, 255, 102, 0.1) 1px, transparent 1px), -o-linear-gradient(top, rgba(0, 255, 102, 0.1) 1px, transparent 1px);
   background-image: linear-gradient(to right, rgba(0, 255, 102, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 255, 102, 0.1) 1px, transparent 1px);
   position: fixed;
   height: 100%;
@@ -70,9 +72,18 @@ pre {
   font-family: monospace; }
 
 .grid-layout {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 400px 1fr;
   grid-template-columns: 400px 1fr;
   height: 100%; }
+  .grid-layout .side-bar {
+    position: relative; }
+    .grid-layout .side-bar .about-the-game {
+      position: absolute;
+      bottom: 0.5rem;
+      left: 0.5rem;
+      color: #00ff66; }
 
 @media (max-width: 768px) {
   .title-text {
@@ -84,5 +95,16 @@ pre {
 
   svg {
     width: 95%; } }
+@media (max-width: 768px) {
+  .grid-layout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+    .grid-layout .side-bar {
+      min-height: 50vh; } }
 
 /*# sourceMappingURL=style.css.map */

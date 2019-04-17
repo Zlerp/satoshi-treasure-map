@@ -46,6 +46,8 @@ pre {
 
 .bg {
   background-size: 40px 40px;
+  background-image: -webkit-linear-gradient(left, rgba($terminalGreen, 0.1) 1px, transparent 1px), -webkit-linear-gradient(top, rgba($terminalGreen, 0.1) 1px, transparent 1px);
+  background-image: -o-linear-gradient(left, rgba($terminalGreen, 0.1) 1px, transparent 1px), -o-linear-gradient(top, rgba($terminalGreen, 0.1) 1px, transparent 1px);
   background-image: linear-gradient(to right, rgba($terminalGreen, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba($terminalGreen, 0.1) 1px, transparent 1px);
   position: fixed;
   height: 100%;
@@ -91,9 +93,20 @@ pre {
 }
 
 .grid-layout {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 400px 1fr;
   grid-template-columns: 400px 1fr;
   height:100%;
+  .side-bar {
+    position: relative;
+    .about-the-game {
+      position: absolute;
+      bottom: 0.5rem;
+      left: 0.5rem;
+      color: $terminalGreen;
+    }
+  }
 }
 
 
@@ -110,5 +123,21 @@ pre {
 
   svg {
     width: 95%;
+  }
+}
+
+@media (max-width: 768px){
+  .grid-layout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+
+    .side-bar {
+      min-height: 50vh;
+    }
   }
 }
